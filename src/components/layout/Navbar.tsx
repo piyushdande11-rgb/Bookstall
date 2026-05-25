@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -21,10 +22,25 @@ export default function Navbar() {
     <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
+         {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="text-2xl font-bold text-lbc-blue tracking-tight">
-              Nirbhay Bookstall
+            {/* Added flex, items-center, and gap-3 to align the logo and text */}
+            <Link href="/" className="flex items-center gap-3">
+              
+              {/* Add the circular Image component here */}
+              <Image 
+                src="/images/logo.webp" /* Update if your image name is different */
+                alt="Nirbhay Bookstall Logo" 
+                width={40} 
+                height={40} 
+                className="rounded-full object-cover" 
+              />
+              
+              {/* Wrapped your existing text and custom classes in a span */}
+              <span className="text-2xl font-bold text-lbc-blue tracking-tight">
+                Nirbhay Bookstall
+              </span>
+              
             </Link>
           </div>
 
