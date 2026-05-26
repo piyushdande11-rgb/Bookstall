@@ -1,16 +1,15 @@
-"use client";
+"use client";         
 
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
+import Image from "next/image";              // Importing the Image component, Logo wala image hai
 
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Articles", href: "/articles" },
   { name: "Events", href: "/events" },
-  { name: "Gallery", href: "/gallery" },
   { name: "Team", href: "/team" },
   { name: "Contact", href: "/contact" },
 ];

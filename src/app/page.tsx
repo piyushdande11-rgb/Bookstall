@@ -1,37 +1,25 @@
-// Home Page Nirbhay Bookstall
+// Home Page Nirbhay Bookstall (This is a type script file)
 
 
+import Link from "next/link"; // This is used to link to other pages in the Next.js application
+import { ArrowRight, BookOpen, EarthIcon, Globe, Globe2Icon, Users } from "lucide-react";   // this imports the icons from lucide-react
 
-import Link from "next/link";
-import { ArrowRight, BookOpen, Globe, Users } from "lucide-react";
+// Export function 
+export default function HomePage() 
 
-export default function HomePage() {
+{
   return (
     <div className="flex flex-col min-h-screen">
-      {/* Hero Section */}
-      <section className="bg-lbc-blue text-white py-20 lg:py-32">
+      {/* Title Section */}
+      <section className="bg-cover bg-center bg-no-repeat text-red-600  py-10 lg:py-32" style={{ backgroundImage: "url('/images/Home-bg.jpg')" }}
+>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 font-serif">
-            Empowering the Next Generation of <span className="text-lbc-green">Civic Leaders</span>
+          <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight mb-6">
+            Nirbhay Bookstall Akola
           </h1>
           <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-10 leading-relaxed">
-            Learning Beyond the Classroom (LBC) bridges the gap between students and active governance. 
-            We teach public policy, environmental stewardship, and critical thinking to build a better tomorrow.
+            (A short Text about the organization and its mission.)
           </p>
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <Link 
-              href="/about" 
-              className="bg-lbc-green text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-600 transition-colors flex items-center gap-2"
-            >
-              Discover Our Mission <ArrowRight className="w-5 h-5" />
-            </Link>
-            <Link 
-              href="/events" 
-              className="bg-transparent border-2 border-white/30 text-white px-8 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors"
-            >
-              View Upcoming Events
-            </Link>
-          </div>
         </div>
       </section>
 
@@ -39,9 +27,9 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-lbc-dark mb-4">Our Core Pillars</h2>
+            <h2 className="text-3xl font-bold text-lbc-dark mb-4">Our Mission</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              We focus on practical, real-world education that equips students with the tools they need to make a tangible impact in their communities.
+            (About our mission)  
             </p>
           </div>
 
@@ -49,11 +37,11 @@ export default function HomePage() {
             {/* Pillar 1 */}
             <div className="bg-lbc-light p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
               <div className="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
-                <BookOpen className="w-7 h-7 text-lbc-blue" />
+                <EarthIcon className="w-7 h-7 text-lbc-blue" />
               </div>
-              <h3 className="text-xl font-bold text-lbc-dark mb-3">Public Policy</h3>
+              <h3 className="text-xl font-bold text-lbc-dark mb-3">Climate Change</h3>
               <p className="text-slate-600 leading-relaxed">
-                Demystifying how laws are made, how local governments function, and how students can actively participate in policy-making.
+               Driving awareness around sustainability, climate change, and actionable community projects to protect our environment.
               </p>
             </div>
 
@@ -62,20 +50,20 @@ export default function HomePage() {
               <div className="bg-green-100 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
                 <Globe className="w-7 h-7 text-lbc-green" />
               </div>
-              <h3 className="text-xl font-bold text-lbc-dark mb-3">Environmental Action</h3>
+              <h3 className="text-xl font-bold text-lbc-dark mb-3">Wisdom Literature</h3>
               <p className="text-slate-600 leading-relaxed">
-                Driving awareness around sustainability, climate change, and actionable community projects to protect our environment.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit aliquid eveniet cum, possimus tenetur accusantium autem modi nulla culpa tempore delectus magnam odit libero! Temporibus culpa porro modi repellendus amet.
               </p>
             </div>
 
             {/* Pillar 3 */}
             <div className="bg-lbc-light p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition-shadow">
               <div className="bg-blue-100 w-14 h-14 rounded-xl flex items-center justify-center mb-6">
-                <Users className="w-7 h-7 text-lbc-blue" />
+                <BookOpen className="w-7 h-7 text-lbc-blue" />
               </div>
-              <h3 className="text-xl font-bold text-lbc-dark mb-3">Community Leadership</h3>
+              <h3 className="text-xl font-bold text-lbc-dark mb-3">Bookstall Mission</h3>
               <p className="text-slate-600 leading-relaxed">
-                Fostering critical thinking and debate skills, preparing students to lead initiatives and inspire their peers.
+                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, accusantium voluptas culpa vitae porro quod, nemo facere cumque architecto, omnis eaque perferendis qui adipisci maxime et! Illum quisquam ab placeat.
               </p>
             </div>
           </div>

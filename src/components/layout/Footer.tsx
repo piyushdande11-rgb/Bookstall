@@ -10,10 +10,10 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-1 md:col-span-1">
             <Link href="/" className="text-2xl font-bold text-white tracking-tight">
-              LBC.
+              Nirbhay Bookstall
             </Link>
             <p className="mt-4 text-sm text-slate-400 leading-relaxed">
-              Learning Beyond the Classroom. Empowering the next generation of leaders through civic awareness, active governance, and public policy education.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero animi cupiditate fugit maiores dolorum? Harum corporis eius fugiat exercitationem. Pariatur temporibus accusantium vel magni debitis! Vitae similique possimus facere sapiente.  
             </p>
           </div>
 
@@ -43,13 +43,13 @@ export default function Footer() {
             <h3 className="text-white font-semibold mb-4">Get in Touch</h3>
             <ul className="space-y-2 text-sm text-slate-400">
               <li>Akola, Maharashtra, India</li>
-              <li>contact@lbc-foundation.org</li>
+              <li>contact@nitbhay-foundation.org</li>
             </ul>
           </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-slate-800 text-sm text-center text-slate-500">
-          &copy; {currentYear} Learning Beyond the Classroom. All rights reserved.
+          &copy; {currentYear} Nirbhay Bookstall. All rights reserved.
         </div>
       </div>
     </footer>
