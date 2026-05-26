@@ -15,8 +15,8 @@ const merriweather = Merriweather({
 // Base SEO Metadata
 export const metadata: Metadata = {
   title: {
-    template: "%s | Learning Beyond the Classroom",
-    default: "LBC | Learning Beyond the Classroom",
+    template: "%s | Nirbhay Bookstall",
+    default: "Nirbhay Bookstall",
   },
   description: "A nonprofit educational foundation empowering students through public policy, governance, and civic awareness.",
   keywords: ["education", "nonprofit", "public policy", "civic awareness", "student governance"],
