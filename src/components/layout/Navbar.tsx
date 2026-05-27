@@ -1,17 +1,25 @@
-"use client";         
+"use client";
 
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import Image from "next/image";              // Importing the Image component, Logo wala image hai
+import Image from "next/image";
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
+  { name: "Nirbhay Bookstall", href: "/nirbhay-bookstall" },
   { name: "Articles", href: "/articles" },
   { name: "Events", href: "/events" },
   { name: "Team", href: "/team" },
   { name: "Contact", href: "/contact" },
+];
+
+const socials = [
+  { icon: "ti-brand-youtube",   label: "YouTube",   href: "#" },
+  { icon: "ti-brand-instagram", label: "Instagram", href: "#" },
+  { icon: "ti-brand-facebook",  label: "Facebook",  href: "#" },
+  { icon: "ti-brand-medium",    label: "Medium",    href: "#" },
+  { icon: "ti-brand-x",         label: "X",         href: "#" },
 ];
 
 export default function Navbar() {
@@ -21,60 +29,64 @@ export default function Navbar() {
     <header className="bg-white border-b border-slate-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-         {/* Logo */}
-          <div className="flex-shrink-0">
-            {/* Added flex, items-center, and gap-3 to align the logo and text */}
+
+          {/* Logo — fixed width so centered nav doesn't overlap */}
+          <div className="flex-1 flex justify-start">
             <Link href="/" className="flex items-center gap-3">
-              
-              {/* Add the circular Image component here */}
-              <Image 
-                src="/images/logo.webp" /* Update if your image name is different */
-                alt="Nirbhay Bookstall Logo" 
-                width={40} 
-                height={40} 
-                className="rounded-full object-cover" 
+              <Image
+                src="/images/logo.webp"
+                alt="ABC Foundation Logo"
+                width={40}
+                height={40}
+                className="rounded-full object-cover"
               />
-              
-              {/* Wrapped your existing text and custom classes in a span */}
               <span className="text-2xl font-bold text-lbc-blue tracking-tight">
-                Nirbhay Bookstall
+                ABC Foundation
               </span>
-              
             </Link>
           </div>
 
-          {/* Desktop Nav */}
-          <nav className="hidden md:flex space-x-8">
+          {/* Desktop Nav — truly centered in the middle third */}
+          <nav className="hidden md:flex items-center gap-8 flex-shrink-0">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.href}
-                className="text-slate-600 hover:text-lbc-blue font-medium transition-colors"
+                className="text-slate-600 hover:text-lbc-blue font-medium transition-colors whitespace-nowrap"
               >
                 {link.name}
               </Link>
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:flex">
-            <Link
-              href="/contact"
-              className="bg-lbc-blue text-white px-5 py-2.5 rounded-lg font-medium hover:bg-blue-800 transition-colors shadow-sm"
-            >
-              Join the Movement
-            </Link>
-          </div>
+          {/* Right side: Social icons + Mobile hamburger */}
+          <div className="flex-1 flex justify-end items-center gap-1">
 
-          {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+            {/* Social icons — desktop only */}
+            <div className="hidden md:flex items-center gap-1">
+              {socials.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="w-9 h-9 flex items-center justify-center rounded-full text-slate-500 hover:text-lbc-blue hover:bg-slate-100 transition-colors"
+                >
+                  <i className={`ti ${s.icon} text-[20px]`} />
+                </a>
+              ))}
+            </div>
+
+            {/* Mobile hamburger */}
             <button
+              className="md:hidden text-slate-600 hover:text-lbc-blue focus:outline-none"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-600 hover:text-lbc-blue focus:outline-none"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
+
         </div>
       </div>
 
@@ -92,6 +104,22 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
+
+            {/* Social icons row in mobile menu */}
+            <div className="pt-3 border-t border-slate-100 flex items-center gap-2 px-3">
+              {socials.map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  className="w-9 h-9 flex items-center justify-center rounded-full text-slate-500 hover:text-lbc-blue hover:bg-slate-100 transition-colors"
+                >
+                  <i className={`ti ${s.icon} text-[20px]`} />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       )}

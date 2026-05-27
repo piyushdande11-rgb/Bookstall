@@ -10,10 +10,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tabler/icons-webfont": "^3.44.0",
     "date-fns": "^3.6.0",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.370.0",
     "next": "14.2.3",
+    "next-mdx-remote": "^6.0.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "remark": "^15.0.1",

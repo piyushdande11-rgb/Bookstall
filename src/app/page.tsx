@@ -11,14 +11,13 @@ export default function HomePage()
   return (
     <div className="flex flex-col min-h-screen">
       {/* Title Section */}
-      <section className="bg-cover bg-center bg-no-repeat text-red-600  py-10 lg:py-32" style={{ backgroundImage: "url('/images/Home-bg.jpg')" }}
->
+      <section className="bg-amber-300 text-center py-10 lg:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight mb-6">
-            Nirbhay Bookstall Akola
+            ABC Foundation Akola
           </h1>
-          <p className="text-lg md:text-xl text-blue-100 max-w-3xl mx-auto mb-10 leading-relaxed">
-            (A short Text about the organization and its mission.)
+          <p className="text-lg md:text-xl text-black max-w-3xl mx-auto mb-10 leading-relaxed">
+            (A short Text about the foundation and its mission.)
           </p>
         </div>
       </section>

@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import "@tabler/icons-webfont/dist/tabler-icons.min.css";
 @layer base {
   body {
     @apply bg-lbc-light text-lbc-dark antialiased;
@@ -12,6 +12,9 @@
   }
 }
 
+
+
+/* need  some toughts on this code*/
 
 .hero-background {
   background-image: url('/images/Home-bg.jpg');

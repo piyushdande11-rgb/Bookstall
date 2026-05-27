@@ -1,7 +1,12 @@
-import Link from "next/link";
-import { getAllItems } from "@/lib/markdown";
-import { ArticleMeta, ContentItem } from "@/types";
-import { Calendar, User } from "lucide-react";
+import Link from "next/link";                // link component for client-side navigation
+import { getAllItems } from "@/lib/markdown";   //function to fetch all markdown items from a specified folder
+import { ArticleMeta, ContentItem } from "@/types"; // Types for article metadata and content items, ensuring type safety when fetching and rendering articles
+import { Calendar, User } from "lucide-react"; // Calrender for date icon
+
+
+// Atricle Tag Page - Lists all articles in a grid format with title, excerpt, date,
+//  and author information, each article 
+
 
 export default function ArticlesPage() {
   // Fetch all articles from the markdown folder
@@ -15,7 +20,7 @@ export default function ArticlesPage() {
         <div className="mb-12 border-b border-slate-200 pb-8">
           <h1 className="text-4xl font-bold text-lbc-dark mb-4 font-serif">Articles & Insights</h1>
           <p className="text-lg text-slate-600 max-w-2xl">
-            Explore our latest thoughts on public policy, civic leadership, and educational frameworks.
+            Explore our thoughts on education, climate change, Wisdom Literaure, and more.
           </p>
         </div>
 
