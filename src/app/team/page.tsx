@@ -10,7 +10,7 @@ const members = [
     email: "member@email.com",
     linkedin: "https://linkedin.com/in/username",
     whatsapp: "919999999999", // country code + number, no + or spaces
-    image: "/images/team/piyushdande.jpg", // place image in /public/team/
+    image: "/images/team/piyushdande.png", // place image in /public/team/
   },
 
   {
@@ -19,7 +19,7 @@ const members = [
     email: "member@email.com",
     linkedin: "https://linkedin.com/in/username",
     whatsapp: "919999999999", // country code + number, no + or spaces
-    image: "/images/team/piyushdande.jpg", // place image in /public/team/
+    image: "/images/team/piyushdande.png", // place image in /public/team/
   },
 
   {
@@ -28,7 +28,7 @@ const members = [
     email: "member@email.com",
     linkedin: "https://linkedin.com/in/username",
     whatsapp: "919999999999", // country code + number, no + or spaces
-    image: "/images/team/piyushdande.jpg", // place image in /public/team/
+    image: "/images/team/piyushdande.png", // place image in /public/team/
   },
 
   {
@@ -37,7 +37,7 @@ const members = [
     email: "member@email.com",
     linkedin: "https://linkedin.com/in/username",
     whatsapp: "919999999999", // country code + number, no + or spaces
-    image: "/images/team/piyushdande.jpg", // place image in /public/team/
+    image: "/images/team/piyushdande.png", // place image in /public/team/
   },
 ];
 
