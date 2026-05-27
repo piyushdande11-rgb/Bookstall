@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.d.ts", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.d.ts", ".next/types/**/*.ts", ".next/types/app/team/page.tsx", ".next/types/app/events/page.tsx", ".next/types/app/nirbhay-bookstall/page.tsx", ".next/types/app/articles/page.tsx", ".next/types/app/contact/page.tsx", ".next/types/app/events/[slug]/page.tsx"],
   "exclude": ["node_modules"]
 }
