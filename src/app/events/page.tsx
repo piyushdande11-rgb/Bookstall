@@ -1,13 +1,23 @@
+// src/app/team/page.tsx
+
+import { Mail } from "lucide-react";
+import Image from "next/image";
+
+
 export default function EventsPage() {
   return (
-    <main className="max-w-4xl mx-auto px-6 py-16">
-      <h1 className="text-4xl font-bold text-slate-900 mb-10">Past Events</h1>
+    <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
-      <ul className="space-y-4">
-        <li className="text-lg text-slate-700">
-          Bookstall at Military School Akola
-        </li>
-      </ul>
-    </main>
-  );
+      {/* Title */}
+      <div className="text-center mb-12">
+        <h1 className="text-4xl font-serif font-bold text-slate-800 mb-3">
+          Past Events
+        </h1>
+        <p className="text-slate-500 max-w-xl mx-auto">
+          Bookstall at military school
+        </p>
+      </div>
+</main>
+
+ );
 }
